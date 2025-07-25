@@ -83,7 +83,7 @@ if input_text.strip():
 
     if generate_button:
         with st.spinner(f"Generating text in {style_choice}'s style..."):
-            continuation = generate_text_in_style(generator, style_choice, 1000, stoi, itos, prompt=input_text)
+            continuation = generate_text_in_style(generator, style_choice, 200, stoi, itos, prompt=input_text)
         st.markdown("**Generated Text:**")
         st.code(continuation)
 
